@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/index.css">
+  <title>Radio Survey</title>
+</head>
+<body>
+  <div id="container">
+  <header id="header">
+    <h1 id="title">Radio Survey</h1>
+    <p id="description">Please choose your favorite radio(s) and let us know!</p>
+  </header>
+  <main id="main">
+    <form id="survey-form">
+      <div id="name">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter your name" required>
+      </div>
+      <div id="emailDiv">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="enter your email" required>
+      </div>
+      <div id="number">
+        <label id="number-label" for="enter_number">Enter a number:</label>
+        <input type="number" id="enter_number" name="number" min="0" max="10" placeholder="enter a number between 0 and 10">
+      </div>
+      <hr/>
+      <div id="select">
+        <label id="select-label" for="dropdown">Select one radio:</label>
+        <select id="dropdown">
+          <option value="">--click here to select a radio--</option>
+          <option value="motorola">Motorola</option>
+          <option value="Vitorola">Vitorola</option>
+          <option value="zenith">Zenith</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>Choose one of these radios</legend>
+
+        <input type="radio" id="motorola" name="brand">
+        <label for="motorola">Motorola</label>
+
+        <input type="radio" id="victorola" name="brand">
+        <label for="victorola">Victorola</label>
+
+        <input type="radio" id="zenith" name="brand">
+        <label for="zenith">Zenith</label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose one or more of these radios</legend>
+
+        <input type="checkbox" id="motorola" name="brand" value="motorola">
+        <label for="motorola">Motorola</label>
+
+        <input type="checkbox" id="victorola" name="brand" value="victorola">
+        <label for="victorola">Victorola</label>
+
+        <input type="checkbox" id="zenith" name="brand" value="zenith">
+        <label for="zenith">Zenith</label>
+      </fieldset>
+      <div id="comments">
+        <label id="comments-label" for="comments">Enter any comments you may have here:</label>
+        <textarea id="comments" name="comments" rows="10" maxlength="200" wrap="hard" placeholder="type your comment here"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer id="footer">
+    <span>Footer for this awesome survey</span><span style="float: right;">&copy;2018 Tom Skinner</span>
+  </footer>
+  </div>
+</body>
+</html>
